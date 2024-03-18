@@ -34,3 +34,5 @@ jobs:
             TF_VAR_aws_region: ${{ secrets.AWS_REGION }}
             TF_VAR_aws_access_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
             TF_VAR_aws_secret: ${{ secrets.AWS_ACCESS_KEY_SECRET }}
+            TF_VAR_rds_db_user: ${{ secrets.RDS_DB_USER }}
+            TF_VAR_rds_db_password: ${{ secrets.RDS_DB_PASSWORD }}
