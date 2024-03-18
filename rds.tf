@@ -2,8 +2,8 @@ resource "aws_db_instance" "default" {
   allocated_storage    = 20
   storage_type         = "gp2"
   engine               = "postgres"
-  engine_version       = "12.4"
-  instance_class       = "db.t2.micro"
+  engine_version       = "15.2"
+  instance_class       = "db.t3.medium"
   name                 = "lanchonete"
   username             = var.rds_db_user
   password             = var.rds_db_password
