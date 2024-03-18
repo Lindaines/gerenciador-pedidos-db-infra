@@ -7,7 +7,7 @@ resource "aws_db_instance" "default" {
   name                 = "lanchonete"
   username             = var.rds_db_user
   password             = var.rds_db_password
-  parameter_group_name = "default.postgres12"
+  parameter_group_name = "default.postgres15"
   final_snapshot_identifier = "pgsql-snapshot"
 
   vpc_security_group_ids = [aws_security_group.instance.id]
